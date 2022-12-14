@@ -1,5 +1,6 @@
 {
   "name": "packui",
+  "author": "Lucas Farias",
   "version": "0.1.0",
   "private": true,
   "scripts": {
