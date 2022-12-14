@@ -8,14 +8,11 @@ const MenuItem = ({ href, label, className }: IProps) => {
   const selected = href.includes(subRoute[2]);
 
   return (
-    <Link href={href}>
-      <div
-        className={`${className} hover:bg-neutral-100 rounded-lg py-2 px-2 cursor-pointer mb-2 text-sm ${
-          selected && 'bg-neutral-100'
-        }`}
-      >
-        {label}
-      </div>
+    <Link
+      href={href}
+      className={`${className} hover:bg-neutral-100 px-4 py-3 text-sm ${selected && 'bg-neutral-100'} block`}
+    >
+      {label}
     </Link>
   );
 };
