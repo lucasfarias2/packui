@@ -11,7 +11,7 @@ const Page = ({ children, className }: IProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="h-[50px] shadow-md flex items-center px-6 relative bg-neutral-800 text-white">
+      <nav className="h-[50px] shadow flex items-center px-6 relative bg-neutral-800 text-white z-10">
         <Link href="/" className="font-semibold text-xl logo mr-4">
           PackUI
         </Link>
@@ -24,7 +24,7 @@ const Page = ({ children, className }: IProps) => {
       </nav>
 
       <main className={`flex flex-row ${className}`}>
-        <div className="bg-neutral-50 w-[270px] py-4">
+        <div className="bg-neutral-50 w-[270px] py-4 shadow relative h-[100vh]">
           <MenuItem href="/" label="Home" />
           <div className="text-neutral-500 uppercase text-sm p-4">Components</div>
           <MenuItem href="/components/card" label="Card" />
