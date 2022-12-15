@@ -1,3 +1,4 @@
+import { DesktopOutlined, MobileOutlined } from '@ant-design/icons';
 import Head from 'next/head';
 import Link from 'next/link';
 import MenuItem from './menu-item';
@@ -16,9 +17,11 @@ const Page = ({ children, className }: IProps) => {
           PackUI
         </Link>
         <Link href="/web/components" className="mx-2 hover:bg-white/10 h-full flex items-center px-3">
+          <DesktopOutlined className="mr-2" />
           React
         </Link>
         <Link href="/native/components" className="mx-2 hover:bg-white/10 h-full flex items-center px-3">
+          <MobileOutlined className="mr-2" />
           React Native
         </Link>
       </nav>
