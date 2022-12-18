@@ -1,6 +1,6 @@
-import Card from '@components/card/card';
-import ComponentDemo from 'components/component-demo';
-import Page from 'components/page';
+import Card from '@library/card/card';
+import ComponentDemo from '@components/component-demo';
+import Page from '@components/page';
 
 const CardPage = () => {
   return (

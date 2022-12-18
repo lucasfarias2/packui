@@ -1,9 +1,14 @@
-const Media = ({ children }: IProps) => {
-  return <div className="p-4 border rounded-lg bg-white">{children}</div>;
+const Media = ({ className, children, leftContent }: IProps) => {
+  return (
+    <div className={`flex items-center justify-center ${className}`}>
+      <div className="p-2">{leftContent}</div>
+      <div className="p-2 flex-1">{children}</div>
+    </div>
+  );
 };
 
-interface IProps {
-  children?: React.ReactNode;
+interface IProps extends IComponent {
+  leftContent: React.ReactNode;
 }
 
 export default Media;

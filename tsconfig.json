@@ -5,9 +5,10 @@
     "baseUrl": "./",
     "paths": {
       "@styles/*": ["./styles/*"],
-      "@components/*": ["library/*"],
+      "@library/*": ["library/*"],
+      "@components/*": ["components/*"],
       "@config/*": ["./config/*"],
-      "@utils/*": ["./utils/*"],
+      "@utils/*": ["./utils/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

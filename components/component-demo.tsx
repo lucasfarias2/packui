@@ -9,8 +9,7 @@ const ComponentDemo = ({ children, title }: IProps) => {
   );
 };
 
-interface IProps {
-  children: React.ReactNode;
+interface IProps extends IComponent {
   title: string;
 }
 

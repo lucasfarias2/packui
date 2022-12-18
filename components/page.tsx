@@ -1,9 +1,9 @@
 import { DesktopOutlined, MobileOutlined } from '@ant-design/icons';
 import Head from 'next/head';
 import Link from 'next/link';
-import MenuItem from './menu-item';
+import MenuItem from '@components/menu-item';
 
-const Page = ({ children, className }: IProps) => {
+const Page = ({ children, className }: IComponent) => {
   return (
     <>
       <Head>
@@ -38,10 +38,5 @@ const Page = ({ children, className }: IProps) => {
     </>
   );
 };
-
-interface IProps {
-  children: React.ReactNode;
-  className?: string;
-}
 
 export default Page;
