@@ -29,9 +29,13 @@ const Page = ({ children, className }: IComponent) => {
       <main className={`flex flex-row ${className}`}>
         <div className="w-[270px] py-4 shadow relative h-[100vh] sidebar">
           <MenuItem href="/" label="Home" />
+          <MenuItem href="/" label="Installation" />
+          <MenuItem href="/" label="Usage" />
+          <MenuItem href="/" label="Customization" />
           <div className="text-neutral-500 p-4 text-lg">Components</div>
           <MenuItem href="/web/components/card" label="Card" />
           <MenuItem href="/web/components/media" label="Media" />
+          <MenuItem href="/web/components/title" label="Title" />
         </div>
         <div className="bg-neutral-100 flex-1 p-6">{children}</div>
       </main>
